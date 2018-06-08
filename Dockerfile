@@ -13,6 +13,6 @@ RUN apk add --update python3 openssl groff && \
 # thus default PAGER settings in AWS CLI won't work
 ENV PAGER="more"
 
-ENTRYPOINT ["/usr/local/bin/aws"]
+ENTRYPOINT ["/bin/ash"]
 
-CMD ["help"]
+WORKDIR /root
