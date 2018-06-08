@@ -16,14 +16,14 @@
 Use image to run container
 
 ```
-docker run -it --rm sijokg/awscli
+docker run -it --name awscli sijokg/awscli
 ```
 
 Provide AWS access credentials as environment variables
 
 ```
-docker run -it --rm \
+docker run -it --name awscli \
 --env AWS_ACCESS_KEY_ID=access_key \
 --env AWS_SECRET_ACCESS_KEY=secret_key \
-denvazh/awscli-docker
+sijokg/awscli-docker
 ```
